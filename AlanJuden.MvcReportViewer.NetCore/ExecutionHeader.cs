@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using System.ServiceModel.Channels;
 
-namespace AlanJuden.MvcReportViewer.ReportServiceExecution
+namespace MvcReportViewer.ReportServiceExecution
 {
 	/// <summary> 
 	/// Functionality added to the Microsoft Sql Server Reporting Services 

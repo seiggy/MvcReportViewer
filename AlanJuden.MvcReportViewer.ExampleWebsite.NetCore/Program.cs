@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace AlanJuden.MvcReportViewer.ExampleWebsite.NetCore
+namespace MvcReportViewer.ExampleWebsite.NetCore
 {
     public class Program
     {

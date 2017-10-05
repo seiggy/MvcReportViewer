@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using System.Net.Http;
 
-namespace AlanJuden.MvcReportViewer
+namespace MvcReportViewer
 {
 	public abstract class ReportController : Controller
 	{
@@ -151,7 +151,7 @@ namespace AlanJuden.MvcReportViewer
 			model.ViewMode = ReportViewModes.View;
 			model.ReportPath = reportPath;
 
-			return Json(AlanJuden.MvcReportViewer.CoreHtmlHelpers.ParametersToHtmlString(null, model));
+			return Json(MvcReportViewer.CoreHtmlHelpers.ParametersToHtmlString(null, model));
 		}
 
 		public ActionResult PrintReport(string reportPath)

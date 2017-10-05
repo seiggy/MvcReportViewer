@@ -1,14 +1,13 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Html;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace AlanJuden.MvcReportViewer
+namespace MvcReportViewer
 {
-	public static class CoreHtmlHelpers
+    public static class CoreHtmlHelpers
 	{
 		public static HtmlString RenderReportViewer(this IHtmlHelper helper, ReportViewerModel model, int? startPage = 1)
 		{
@@ -148,7 +147,7 @@ namespace AlanJuden.MvcReportViewer
 			return new HtmlString(sb.ToString());
 		}
 
-		public static string ParametersToHtmlString(System.Collections.Generic.List<ReportParameterInfo> parameters, ReportViewerModel model)
+		public static string ParametersToHtmlString(List<ReportParameterInfo> parameters, ReportViewerModel model)
 		{
 			StringBuilder sb = new StringBuilder();
 
