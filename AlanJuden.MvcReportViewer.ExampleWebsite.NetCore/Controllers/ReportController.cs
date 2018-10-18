@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace AlanJuden.MvcReportViewer.ExampleWebsite.NetCore.Controllers
+namespace MvcReportViewer.ExampleWebsite.NetCore.Controllers
 {
-    public class ReportController : AlanJuden.MvcReportViewer.ReportController
+    public class ReportController : MvcReportViewer.ReportController
     {
 		protected override ICredentials NetworkCredentials
 		{

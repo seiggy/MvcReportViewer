@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ServiceModel;
 
-namespace AlanJuden.MvcReportViewer.ReportServiceExecution
+namespace MvcReportViewer.ReportServiceExecution
 {
     public partial class ReportExecutionServiceSoapClient
     {

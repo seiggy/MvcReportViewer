@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AlanJuden.MvcReportViewer.ExampleWebsite.NetCore.Controllers
+namespace MvcReportViewer.ExampleWebsite.NetCore.Controllers
 {
     public class HomeController : Controller
     {
