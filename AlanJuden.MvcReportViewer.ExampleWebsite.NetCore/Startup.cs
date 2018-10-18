@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace AlanJuden.MvcReportViewer.ExampleWebsite.NetCore
+namespace MvcReportViewer.ExampleWebsite.NetCore
 {
     public class Startup
     {
@@ -19,12 +19,7 @@ namespace AlanJuden.MvcReportViewer.ExampleWebsite.NetCore
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
-
-            if (env.IsDevelopment())
-            {
-                // This will push telemetry data through Application Insights pipeline faster, allowing you to view results immediately.
-                builder.AddApplicationInsightsSettings(developerMode: true);
-            }
+            
             Configuration = builder.Build();
         }
 
@@ -46,8 +41,6 @@ namespace AlanJuden.MvcReportViewer.ExampleWebsite.NetCore
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseApplicationInsightsRequestTelemetry();
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -57,8 +50,6 @@ namespace AlanJuden.MvcReportViewer.ExampleWebsite.NetCore
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
-            app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseStaticFiles();
 

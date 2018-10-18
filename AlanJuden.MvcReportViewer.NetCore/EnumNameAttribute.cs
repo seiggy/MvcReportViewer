@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlanJuden.MvcReportViewer
+namespace MvcReportViewer
 {
 	public class EnumNameAttribute : Attribute
 	{

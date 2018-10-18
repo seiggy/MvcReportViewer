@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AlanJuden.MvcReportViewer.ReportServiceExecution
+namespace MvcReportViewer.ReportServiceExecution
 {
     
     
